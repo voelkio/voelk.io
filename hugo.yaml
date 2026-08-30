@@ -1,0 +1,47 @@
+baseURL: https://voelk.io/
+locale: en-us
+title: Tim Voelker
+theme: ["PaperMod"]
+
+menu:
+  main:
+    - name: Posts
+      url: posts
+      weight: 2
+    - name: Search
+      url: search
+      weight: 2
+
+params:
+  profileMode:
+    enabled: true
+    title: 👋 Hi, I'm Tim
+    subtitle: I'm a Software Engineer. This is my site.
+    buttons:
+      - name: "Read my Posts"
+        url: "/posts"
+    imageUrl: "images/pfp.jpeg"
+    imageTitle: "My Profile Image"
+    imageWidth: 250
+    imageHeight: 250
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/voelkio"
+    - name: "email"
+      url: "mailto:tim@voelk.io"
+
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
